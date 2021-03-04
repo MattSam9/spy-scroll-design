@@ -92,9 +92,9 @@ html {
   font-weight: bold;
   font-family: mypersianFont;
   background-color: transparent;
-  color:  #f67c92;
+  color: #f67c92;
   outline: none;
-  border: 0.2rem solid  #f67c92;
+  border: 0.2rem solid #f67c92;
   border-radius: 0.5rem;
   cursor: pointer;
   box-shadow: 0rem 0.2rem 1rem #f67c92;
@@ -115,11 +115,10 @@ body {
 }
 
 .header-section {
-  height: 100vh;
-  background-image: url("img/background.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: flex;
+  height: 95vh;
+  justify-content: center;
+  align-items: flex-start;
 }
 /* !logo design */
 .logo {
@@ -195,7 +194,7 @@ body {
 /* ~! logo design*/
 
 .header-text {
-  margin: 10rem 2rem 1rem 8rem;
+  margin: 5rem 2rem 1rem 2rem;
   display: flex;
   width: 40vw;
   flex-direction: column;
@@ -212,9 +211,9 @@ body {
 }
 
 .header-text p {
-font-size: calc(1rem + 0.8vw);
-color: rgba(0, 0, 0, 0.568);
-text-align: justify;
+  font-size: calc(1rem + 0.8vw);
+  color: rgba(0, 0, 0, 0.568);
+  text-align: justify;
 }
 
 .header-text button {
@@ -224,7 +223,6 @@ text-align: justify;
 
 /* // shape's on end of a section */
 .shapes-text-end {
-  margin: 3rem 0rem 2rem 8rem;
   display: flex;
   width: 40vw;
   flex-direction: column;
@@ -252,6 +250,153 @@ text-align: justify;
 }
 /* ~/ shape's on end of a section */
 
+/* ! make live svg in head section */
+.header-svg svg {
+  width: 75rem;
+  height: 60rem;
+}
+#flower1 {
+  animation: flower1 5s ease alternate infinite;
+  -webkit-animation: flower1 5s ease alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#flower2 {
+  animation: flower2 5s ease alternate infinite;
+  -webkit-animation: flower2 5s ease alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+@keyframes flower1 {
+  from {
+    transform: rotateZ(-30deg);
+    -webkit-transform: rotateZ(-30deg);
+    -moz-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    -o-transform: rotateZ(-30deg);
+}
+  to {
+    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    -ms-transform: rotateZ(10deg);
+    -o-transform: rotateZ(10deg);
+  }
+}
+@keyframes flower2 {
+  from {
+    transform: rotateZ(15deg);
+    -webkit-transform: rotateZ(15deg);
+    -moz-transform: rotateZ(15deg);
+    -ms-transform: rotateZ(15deg);
+    -o-transform: rotateZ(15deg);
+  }
+  to {
+    transform: rotateZ(-15deg);
+    -webkit-transform: rotateZ(-15deg);
+    -moz-transform: rotateZ(-15deg);
+    -ms-transform: rotateZ(-15deg);
+    -o-transform: rotateZ(-15deg);
+  }
+}
+
+#r-h {
+  animation: hair 3s linear alternate infinite;
+  -webkit-animation: hair 3s linear alternate infinite;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+@keyframes hair {
+  from {
+    transform: rotateZ(5deg);
+    -webkit-transform: rotateZ(5deg);
+    -moz-transform: rotateZ(5deg);
+    -ms-transform: rotateZ(5deg);
+    -o-transform: rotateZ(5deg);
+  }
+  to {
+    transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(-5deg);
+    -moz-transform: rotateZ(-5deg);
+    -ms-transform: rotateZ(-5deg);
+    -o-transform: rotateZ(-5deg);
+  }
+}
+
+#r-1,
+#r-2,
+#r-2,
+#r-4,
+#r-5 {
+  animation: r-hands 2s linear alternate infinite;
+  -webkit-animation: r-hands 2s linear alternate infinite;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+@keyframes r-hands {
+  from {
+    transform: rotateZ(15deg);
+    -webkit-transform: rotateZ(15deg);
+    -moz-transform: rotateZ(15deg);
+    -ms-transform: rotateZ(15deg);
+    -o-transform: rotateZ(15deg);
+  }
+  to {
+    transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(-5deg);
+    -moz-transform: rotateZ(-5deg);
+    -ms-transform: rotateZ(-5deg);
+    -o-transform: rotateZ(-5deg);
+  }
+}
+#l-1
+{
+  animation: l-hands1 0.5s linear alternate infinite;
+  -webkit-animation: l-hands1 0.5s linear alternate infinite;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+#l-2
+{
+  animation: l-hands2 0.5s linear alternate infinite;
+  -webkit-animation: l-hands2 0.5s linear alternate infinite;
+  transform-origin: left;
+  transform-box: fill-box;
+}
+@keyframes l-hands1 {
+  from {
+    transform: rotateZ(2deg);
+    -webkit-transform: rotateZ(2deg);
+    -moz-transform: rotateZ(2deg);
+    -ms-transform: rotateZ(2deg);
+    -o-transform: rotateZ(2deg);
+  }
+  to {
+    transform: rotateZ(-1deg);
+    -webkit-transform: rotateZ(-1deg);
+    -moz-transform: rotateZ(-1deg);
+    -ms-transform: rotateZ(-1deg);
+    -o-transform: rotateZ(-1deg);
+  }
+}
+@keyframes l-hands2 {
+  from {
+    transform: rotateZ(-2deg);
+    -webkit-transform: rotateZ(-2deg);
+    -moz-transform: rotateZ(-2deg);
+    -ms-transform: rotateZ(-2deg);
+    -o-transform: rotateZ(-2deg);
+}
+  to {
+    transform: rotateZ(2deg);
+    -webkit-transform: rotateZ(2deg);
+    -moz-transform: rotateZ(2deg);
+    -ms-transform: rotateZ(2deg);
+    -o-transform: rotateZ(2deg);
+}
+}
+/* ~! make live svg in head section */
+
 /* *side nave style */
 #sideNave {
   width: 25rem;
@@ -262,18 +407,18 @@ text-align: justify;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  background-color: #f67c92;
+  background-color: #fb5f7bad;
   z-index: 2;
-  transition: 0.4s ease-in;
-  -webkit-transition: 0.4s ease-in;
-  -moz-transition: 0.4s ease-in;
-  -ms-transition: 0.4s ease-in;
-  -o-transition: 0.4s ease-in;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
 }
 
 #sideNave ul li {
   list-style: none;
-  margin: 5rem 2rem ;
+  margin: 5rem 2rem;
 }
 
 #sideNave ul li a {
@@ -283,10 +428,10 @@ text-align: justify;
 }
 
 #sideNave ul li a:hover {
-  text-shadow: 0.1rem 0.2rem 1rem white ;
+  text-shadow: 0.1rem 0.2rem 1rem white;
 }
 
-#menuBtn{
+#menuBtn {
   width: 5rem;
   position: fixed;
   right: 3rem;
