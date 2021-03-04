@@ -8,3 +8,247 @@ html {
   font-size: 62.5%;
 }
 
+/* @public-classes-start */
+
+@font-face {
+  font-family: myFirstEngFont;
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: myFirstEngFont;
+  src: url(fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: myHeaderFont;
+  src: url(fonts/Lobster-Regular.ttf);
+}
+@font-face {
+  font-family: mypersianFont;
+  src: url(fonts/Iranian\ Sans.ttf);
+  unicode-range: U+0600-06FF;
+}
+
+@font-face {
+  font-family: mypersiantitrFont;
+  src: url(fonts/b\ morvarid.ttf);
+  unicode-range: U+0600-06FF;
+}
+
+.d-fa {
+  direction: rtl;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.square-shape {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline-flex;
+  align-self: flex-end;
+  margin: 1.5rem 0;
+  background: #f67c92;
+}
+
+.common-button {
+  padding: 1.8rem 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: mypersianFont;
+  background-color: transparent;
+  color:  #f67c92;
+  outline: none;
+  border: 0.2rem solid  #f67c92;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0rem 0.2rem 1rem #f67c92;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.common-button:hover {
+  background-color: #f67c92;
+  color: #fff;
+}
+/* ~@ public-classes-end */
+
+body {
+  direction: ltr;
+  font-family: myFirstEngFont, mypersianFont;
+}
+
+.header-section {
+  height: 100vh;
+  background-image: url("img/background.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* !logo design */
+.logo {
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  text-decoration: none;
+  color: #570018;
+}
+
+.logo img {
+  width: 65px;
+  height: 100px;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+
+.logo h1 {
+  align-self: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-family: myHeaderFont;
+  color: #c3365e;
+  text-shadow: 0px 5px 1rem #fcbaca;
+}
+
+.logo img:hover {
+  animation: logo 0.7s linear infinite alternate;
+  -webkit-animation: logo 0.7s linear infinite alternate;
+}
+@keyframes logo {
+  from {
+    transform: rotateZ(-7deg);
+    -webkit-transform: rotateZ(-7deg);
+    -moz-transform: rotateZ(-7deg);
+    -ms-transform: rotateZ(-7deg);
+    -o-transform: rotateZ(-7deg);
+  }
+  to {
+    transform: rotateZ(7deg);
+    -webkit-transform: rotateZ(7deg);
+    -moz-transform: rotateZ(7deg);
+    -ms-transform: rotateZ(7deg);
+    -o-transform: rotateZ(7deg);
+  }
+}
+
+.logo h1:hover {
+  animation: devmatt 1s ease-in 1 alternate;
+  -webkit-animation: devmatt 1s ease-in 2 alternate;
+}
+
+@keyframes devmatt {
+  from {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+  }
+}
+/* ~! logo design*/
+
+.header-text {
+  margin: 10rem 2rem 1rem 8rem;
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-text h2 {
+  font-size: calc(4rem + 0.8vw);
+  font-family: mypersiantitrFont;
+  color: rgba(0, 0, 0, 0.705);
+  text-shadow: 0px 5px 1rem #4c4749;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header-text p {
+font-size: calc(1rem + 0.8vw);
+color: rgba(0, 0, 0, 0.568);
+text-align: justify;
+}
+
+.header-text button {
+  align-self: flex-start;
+  margin: 2rem 0rem;
+}
+
+/* // shape's on end of a section */
+.shapes-text-end {
+  margin: 3rem 0rem 2rem 8rem;
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0.8rem;
+}
+
+.line-1 {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #f67c92;
+}
+.line-2 {
+  display: inline-block;
+  width: 8rem;
+  height: 0.2rem;
+  background-color: #f67c92;
+}
+.line-3 {
+  display: inline-block;
+  width: 6rem;
+  height: 0.2rem;
+  background-color: #f67c92;
+}
+/* ~/ shape's on end of a section */
+
