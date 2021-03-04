@@ -29,6 +29,7 @@
 </head>
 
 <body>
+  <!-- @Home section -->
   <section class="header-section container-fluid">
     <div class="logo">
       <a href="https://www.dev-matt.com/">
@@ -51,8 +52,37 @@
       <span class="line-3"></span>
     </div>
   </section>
+  <nav id="sideNave" class="d-fa">
+    <ul>
+      <li><a href="#">خانه</a></li>
+      <li><a href="#">درباره ما</a></li>
+      <li><a href="#">مزیت ها</a></li>
+      <li><a href="#">گزینه ها</a></li>
+      <li><a href="#">پیشنهاد ها</a></li>
+      <li><a href="#">تماس با ما</a></li>
+    </ul>
+  </nav>
+  <img src="img/menu.png" alt="menubtn" id="menuBtn">
+  <!-- ~@ home section -->
+
+  <!-- !about section -->
+
+  <!-- ~!about section -->
 
 
+
+  <script>
+    var sideNav = document.getElementById('sideNave');
+    var sideNavBtn = document.getElementById('menuBtn');
+    sideNav.style.right = "-25rem";
+    sideNavBtn.onclick = function(){
+      if(sideNav.style.right == "-25rem"){
+        sideNav.style.right = "0rem";
+      }else{
+        sideNav.style.right = "-25rem";
+      }
+    }
+  </script>
 </body>
 
 </html>
