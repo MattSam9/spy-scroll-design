@@ -107,6 +107,27 @@ html {
   background-color: #f67c92;
   color: #fff;
 }
+.my-h2 {
+  font-size: calc(4rem + 0.8vw);
+  font-family: mypersiantitrFont;
+  color: #c3365e;
+  text-shadow: 0px 5px 1rem #4c4749;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.my-h3 {
+  font-size: calc(1rem + 0.8vw);
+  color: rgba(0, 0, 0, 0.568);
+  text-shadow: 0px 3px 1rem #4c4749;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.my-p {
+  font-size: calc(1rem + 0.8vw);
+  color: rgba(0, 0, 0, 0.568);
+  text-align: justify;
+}
 /* ~@ public-classes-end */
 
 body {
@@ -116,9 +137,9 @@ body {
 
 .header-section {
   display: flex;
-  height: 95vh;
+  height: 95vh;flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
 }
 /* !logo design */
 .logo {
@@ -152,6 +173,9 @@ body {
 .logo img:hover {
   animation: logo 0.7s linear infinite alternate;
   -webkit-animation: logo 0.7s linear infinite alternate;
+  -moz-animation: logo 0.7s linear infinite alternate;
+  -ms-animation: logo 0.7s linear infinite alternate;
+  -o-animation: logo 0.7s linear infinite alternate;
 }
 @keyframes logo {
   from {
@@ -173,6 +197,9 @@ body {
 .logo h1:hover {
   animation: devmatt 1s ease-in 1 alternate;
   -webkit-animation: devmatt 1s ease-in 2 alternate;
+  -moz-animation: devmatt 1s ease-in 2 alternate;
+  -ms-animation: devmatt 1s ease-in 2 alternate;
+  -o-animation: devmatt 1s ease-in 2 alternate;
 }
 
 @keyframes devmatt {
@@ -194,26 +221,12 @@ body {
 /* ~! logo design*/
 
 .header-text {
-  margin: 5rem 2rem 1rem 2rem;
+  margin: 9rem 0rem 1rem 0rem;
+  padding: 0rem 6rem;
   display: flex;
-  width: 40vw;
+  flex-basis: 50%;
   flex-direction: column;
-  justify-content: center;
-}
-
-.header-text h2 {
-  font-size: calc(4rem + 0.8vw);
-  font-family: mypersiantitrFont;
-  color: #c3365e;
-  text-shadow: 0px 5px 1rem #4c4749;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.header-text p {
-  font-size: calc(1rem + 0.8vw);
-  color: rgba(0, 0, 0, 0.568);
-  text-align: justify;
+  justify-content: normal;
 }
 
 .header-text button {
@@ -224,33 +237,37 @@ body {
 /* // shape's on end of a section */
 .shapes-text-end {
   display: flex;
-  width: 40vw;
   flex-direction: column;
-  justify-content: center;
-  line-height: 0.8rem;
+  line-height: 0.2rem;
 }
 
 .line-1 {
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
+  margin: 0.2rem 0rem;
   background-color: #f67c92;
 }
 .line-2 {
   display: inline-block;
   width: 8rem;
   height: 0.2rem;
+  margin: 0.2rem 0rem;
   background-color: #f67c92;
 }
 .line-3 {
   display: inline-block;
   width: 6rem;
   height: 0.2rem;
+  margin: 0.2rem 0rem;
   background-color: #f67c92;
 }
 /* ~/ shape's on end of a section */
 
 /* ! make live svg in head section */
+.header-svg {
+  flex-basis: 50%;
+}
 .header-svg svg {
   width: 75rem;
   height: 60rem;
@@ -258,12 +275,18 @@ body {
 #flower1 {
   animation: flower1 5s ease alternate infinite;
   -webkit-animation: flower1 5s ease alternate infinite;
+  -moz-animation: flower1 5s ease alternate infinite;
+  -ms-animation: flower1 5s ease alternate infinite;
+  -o-animation: flower1 5s ease alternate infinite;
   transform-origin: bottom;
   transform-box: fill-box;
 }
 #flower2 {
   animation: flower2 5s ease alternate infinite;
   -webkit-animation: flower2 5s ease alternate infinite;
+  -moz-animation: flower2 5s ease alternate infinite;
+  -ms-animation: flower2 5s ease alternate infinite;
+  -o-animation: flower2 5s ease alternate infinite;
   transform-origin: bottom;
   transform-box: fill-box;
 }
@@ -303,6 +326,9 @@ body {
 #r-h {
   animation: hair 3s linear alternate infinite;
   -webkit-animation: hair 3s linear alternate infinite;
+  -moz-animation: hair 3s linear alternate infinite;
+  -ms-animation: hair 3s linear alternate infinite;
+  -o-animation: hair 3s linear alternate infinite;
   transform-origin: top;
   transform-box: fill-box;
 }
@@ -327,12 +353,18 @@ body {
 #r-2 {
   animation: r-hands1 4s 2s linear alternate infinite;
   -webkit-animation: r-hands1 4s 2s linear alternate infinite;
+  -moz-animation: r-hands1 4s 2s linear alternate infinite;
+  -ms-animation: r-hands1 4s 2s linear alternate infinite;
+  -o-animation: r-hands1 4s 2s linear alternate infinite;
   transform-origin: right;
   transform-box: fill-box;
 }
 #r-5 {
   animation: r-paper 4s 2s linear alternate infinite;
   -webkit-animation: r-paper 4s 2s linear alternate infinite;
+  -moz-animation: r-paper 4s 2s linear alternate infinite;
+  -ms-animation: r-paper 4s 2s linear alternate infinite;
+  -o-animation: r-paper 4s 2s linear alternate infinite;
   transform-origin: right;
   transform-box: fill-box;
 }
@@ -342,6 +374,9 @@ body {
  {
   animation: r-shoulder 4s 2s linear alternate infinite;
   -webkit-animation: r-shoulder 4s 2s linear alternate infinite;
+  -moz-animation: r-shoulder 4s 2s linear alternate infinite;
+  -ms-animation: r-shoulder 4s 2s linear alternate infinite;
+  -o-animation: r-shoulder 4s 2s linear alternate infinite;
   transform-origin: top;
   transform-box: fill-box;
 }
@@ -418,16 +453,23 @@ body {
 {
   animation: l-hands1 0.3s linear alternate infinite;
   -webkit-animation: l-hands1 0.3s linear alternate infinite;
+  -moz-animation: l-hands1 0.3s linear alternate infinite;
+  -ms-animation: l-hands1 0.3s linear alternate infinite;
+  -o-animation: l-hands1 0.3s linear alternate infinite;
   transform-origin: left;
   transform-box: fill-box;
 }
-#l-2
-{
-  animation: l-hands2 0.3s linear alternate infinite;
-  -webkit-animation: l-hands2 0.3s linear alternate infinite;
+#l-5 {
+  animation: r-hands1 2s linear alternate infinite;
+  -webkit-animation: r-hands1 2s linear alternate infinite;
+  -moz-animation: r-hands1 2s linear alternate infinite;
+  -ms-animation: r-hands1 2s linear alternate infinite;
+  -o-animation: r-hands1 2s linear alternate infinite;
   transform-origin: left;
   transform-box: fill-box;
 }
+
+
 @keyframes l-hands1 {
   from {
     transform: rotateZ(2deg);
@@ -444,22 +486,7 @@ body {
     -o-transform: rotateZ(-1deg);
   }
 }
-@keyframes l-hands2 {
-  from {
-    transform: rotateZ(-2deg);
-    -webkit-transform: rotateZ(-2deg);
-    -moz-transform: rotateZ(-2deg);
-    -ms-transform: rotateZ(-2deg);
-    -o-transform: rotateZ(-2deg);
-}
-  to {
-    transform: rotateZ(2deg);
-    -webkit-transform: rotateZ(2deg);
-    -moz-transform: rotateZ(2deg);
-    -ms-transform: rotateZ(2deg);
-    -o-transform: rotateZ(2deg);
-}
-}
+
 /* ~! make live svg in head section */
 
 /* *side nave style */
@@ -509,4 +536,151 @@ body {
 /* ~*side nave style */
 
 
-/* @ section */
+/* @ About Us section */
+.about {
+  display: flex;
+  padding: 2rem 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .left-col {
+  flex-basis: 50%;
+}
+.about .left-col svg{
+  width: 100%;
+  height: 90vh;
+}
+.about .right-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1rem 8rem 1rem 3rem;
+}
+
+/* //about svg */
+@keyframes birds {
+  0% {
+    transform: translate(0rem,0rem);
+    -webkit-transform: translate(0rem,0rem);
+    -moz-transform: translate(0rem,0rem);
+    -ms-transform: translate(0rem,0rem);
+    -o-transform: translate(0rem,0rem);
+}
+  25% {
+    transform: translate(-1rem,-3rem);
+    -webkit-transform: translate(-1rem,-3rem);
+    -moz-transform: translate(-1rem,-3rem);
+    -ms-transform: translate(-1rem,-3rem);
+    -o-transform: translate(-1rem,-3rem);
+}
+  50% {
+    transform: translate(-3rem,-2rem);
+    -webkit-transform: translate(-3rem,-2rem);
+    -moz-transform: translate(-3rem,-2rem);
+    -ms-transform: translate(-3rem,-2rem);
+    -o-transform: translate(-3rem,-2rem);
+}
+  75% {
+    transform: translate(-1rem,3rem);
+    -webkit-transform: translate(-1rem,3rem);
+    -moz-transform: translate(-1rem,3rem);
+    -ms-transform: translate(-1rem,3rem);
+    -o-transform: translate(-1rem,3rem);
+}
+  100% {
+    transform: translate(0rem,0rem);
+    -webkit-transform: translate(0rem,0rem);
+    -moz-transform: translate(0rem,0rem);
+    -ms-transform: translate(0rem,0rem);
+    -o-transform: translate(0rem,0rem);
+}
+}
+#bird1 {
+  animation: birds 8s linear infinite;
+  -webkit-animation: birds 8s linear infinite;
+  -moz-animation: birds 8s linear infinite;
+  -ms-animation: birds 8s linear infinite;
+  -o-animation: birds 8s linear infinite;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+#bird2 {
+  animation: birds 9s linear infinite alternate-reverse;
+  -webkit-animation: birds 9s linear infinite alternate-reverse;
+  -moz-animation: birds 8s linear alternate-reverse infinite;
+  -ms-animation: birds 8s linear alternate-reverse infinite;
+  -o-animation: birds 8s linear alternate-reverse infinite;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+#bird3 {
+  animation: birds 7s linear infinite alternate;
+  -webkit-animation: birds 7s linear infinite alternate;
+  -moz-animation: birds 8s linear alternate infinite;
+  -ms-animation: birds 8s linear alternate infinite;
+  -o-animation: birds 8s linear alternate infinite;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+#g-flower2{
+  animation: flower1 4s ease alternate infinite;
+  -webkit-animation: flower1 4s ease alternate infinite;
+  -moz-animation: flower1 4s ease alternate infinite;
+  -ms-animation: flower1 4s ease alternate infinite;
+  -o-animation: flower1 4s ease alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#g-flower1{
+  animation: flower2 5s ease alternate infinite;
+  -webkit-animation: flower2 5s ease alternate infinite;
+  -moz-animation: flower2 5s ease alternate infinite;
+  -ms-animation: flower2 5s ease alternate infinite;
+  -o-animation: flower2 5s ease alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#tree{
+  animation: tree 4s ease alternate infinite;
+  -webkit-animation: tree 4s ease alternate infinite;
+  -moz-animation: tree 5s ease alternate infinite;
+  -ms-animation: tree 5s ease alternate infinite;
+  -o-animation: tree 5s ease alternate infinite;
+  transform-origin: center bottom;
+  transform-box: fill-box;
+}
+@keyframes tree {
+  from {
+    transform: rotateZ(-1deg);
+    -webkit-transform: rotateZ(-1deg);
+    -moz-transform: rotateZ(-1deg);
+    -ms-transform: rotateZ(-1deg);
+    -o-transform: rotateZ(-1deg);
+}
+  to {
+    transform: rotateZ(2deg);
+    -webkit-transform: rotateZ(2deg);
+    -moz-transform: rotateZ(2deg);
+    -ms-transform: rotateZ(2deg);
+    -o-transform: rotateZ(2deg);
+}
+}
+#sun {
+  animation: sun ease-in-out 4s alternate infinite;
+  -webkit-animation: sun ease-in-out 4s alternate infinite;
+  -moz-animation: sun ease-in-out 5s alternate infinite;
+  -ms-animation: sun ease-in-out 5s alternate infinite;
+  -o-animation: sun ease-in-out 5s alternate infinite;
+}
+@keyframes sun {
+  from {fill: rgb(255, 224, 52);}
+  to {fill: rgb(255, 239, 149);}
+}
+/* ~/about svg */
+
+/* ~@ About Us section */
+
+/* ? Features Section */
+
+/* ~? Features Section */
