@@ -137,7 +137,8 @@ body {
 
 .header-section {
   display: flex;
-  height: 95vh;flex-wrap: wrap;
+  height: 95vh;
+  flex-wrap: wrap;
   justify-content: center;
   /*align-items: flex-start;*/
 }
@@ -146,6 +147,7 @@ body {
   display: flex;
   text-transform: capitalize;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .logo a {
@@ -297,7 +299,7 @@ body {
     -moz-transform: rotateZ(-30deg);
     -ms-transform: rotateZ(-30deg);
     -o-transform: rotateZ(-30deg);
-}
+  }
   to {
     transform: rotateZ(10deg);
     -webkit-transform: rotateZ(10deg);
@@ -370,8 +372,7 @@ body {
 }
 
 #r-3,
-#r-4
- {
+#r-4 {
   animation: r-shoulder 4s 2s linear alternate infinite;
   -webkit-animation: r-shoulder 4s 2s linear alternate infinite;
   -moz-animation: r-shoulder 4s 2s linear alternate infinite;
@@ -387,7 +388,7 @@ body {
     -moz-transform: rotateZ(0deg);
     -ms-transform: rotateZ(0deg);
     -o-transform: rotateZ(0deg);
-}
+  }
   50% {
     transform: rotateZ(15deg);
     -webkit-transform: rotateZ(15deg);
@@ -410,21 +411,21 @@ body {
     -moz-transform: translateY(0rem);
     -ms-transform: translateY(0rem);
     -o-transform: translateY(0rem);
-}
+  }
   50% {
     transform: translateY(-4rem);
     -webkit-transform: translateY(-4rem);
     -moz-transform: translateY(-4rem);
     -ms-transform: translateY(-4rem);
     -o-transform: translateY(-4rem);
-}
+  }
   100% {
     transform: translateY(0rem);
     -webkit-transform: translateY(0rem);
     -moz-transform: translateY(0rem);
     -ms-transform: translateY(0rem);
     -o-transform: translateY(0rem);
-}
+  }
 }
 @keyframes r-shoulder {
   0% {
@@ -433,24 +434,23 @@ body {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -o-transform: scale(1, 1);
-}
+  }
   50% {
     transform: scale(1.4, 0.85);
     -webkit-transform: scale(1.4, 0.85);
     -moz-transform: scale(1.4, 0.85);
     -ms-transform: scale(1.4, 0.85);
     -o-transform: scale(1.4, 0.85);
-}
+  }
   100% {
     transform: scale(1, 1.1);
     -webkit-transform: scale(1, 1.1);
     -moz-transform: scale(1, 1.1);
     -ms-transform: scale(1, 1.1);
     -o-transform: scale(1, 1.1);
+  }
 }
-}
-#l-1
-{
+#l-1 {
   animation: l-hands1 0.3s linear alternate infinite;
   -webkit-animation: l-hands1 0.3s linear alternate infinite;
   -moz-animation: l-hands1 0.3s linear alternate infinite;
@@ -468,7 +468,6 @@ body {
   transform-origin: left;
   transform-box: fill-box;
 }
-
 
 @keyframes l-hands1 {
   from {
@@ -529,12 +528,16 @@ body {
   position: fixed;
   right: 3rem;
   top: 3.5rem;
+  transition: all 1s ease;
   z-index: 2;
   cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 
 /* ~*side nave style */
-
 
 /* @ About Us section */
 .about {
@@ -543,58 +546,57 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-.about .left-col {
+.about .right-col {
   flex-basis: 50%;
 }
-.about .left-col svg{
+.about .right-col svg {
   width: 100%;
-  height: 90vh;
 }
-.about .right-col {
+.about .left-col {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
   margin: 1rem 0rem 1rem 0rem;
-  padding: 1rem 8rem 1rem 3rem;
+  padding: 1rem 2rem 1rem 7rem;
 }
 
 /* //about svg */
 @keyframes birds {
   0% {
-    transform: translate(0rem,0rem);
-    -webkit-transform: translate(0rem,0rem);
-    -moz-transform: translate(0rem,0rem);
-    -ms-transform: translate(0rem,0rem);
-    -o-transform: translate(0rem,0rem);
-}
+    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+    -moz-transform: translate(0rem, 0rem);
+    -ms-transform: translate(0rem, 0rem);
+    -o-transform: translate(0rem, 0rem);
+  }
   25% {
-    transform: translate(-1rem,-3rem);
-    -webkit-transform: translate(-1rem,-3rem);
-    -moz-transform: translate(-1rem,-3rem);
-    -ms-transform: translate(-1rem,-3rem);
-    -o-transform: translate(-1rem,-3rem);
-}
+    transform: translate(-1rem, -3rem);
+    -webkit-transform: translate(-1rem, -3rem);
+    -moz-transform: translate(-1rem, -3rem);
+    -ms-transform: translate(-1rem, -3rem);
+    -o-transform: translate(-1rem, -3rem);
+  }
   50% {
-    transform: translate(-3rem,-2rem);
-    -webkit-transform: translate(-3rem,-2rem);
-    -moz-transform: translate(-3rem,-2rem);
-    -ms-transform: translate(-3rem,-2rem);
-    -o-transform: translate(-3rem,-2rem);
-}
+    transform: translate(-3rem, -2rem);
+    -webkit-transform: translate(-3rem, -2rem);
+    -moz-transform: translate(-3rem, -2rem);
+    -ms-transform: translate(-3rem, -2rem);
+    -o-transform: translate(-3rem, -2rem);
+  }
   75% {
-    transform: translate(-1rem,3rem);
-    -webkit-transform: translate(-1rem,3rem);
-    -moz-transform: translate(-1rem,3rem);
-    -ms-transform: translate(-1rem,3rem);
-    -o-transform: translate(-1rem,3rem);
-}
+    transform: translate(-1rem, 3rem);
+    -webkit-transform: translate(-1rem, 3rem);
+    -moz-transform: translate(-1rem, 3rem);
+    -ms-transform: translate(-1rem, 3rem);
+    -o-transform: translate(-1rem, 3rem);
+  }
   100% {
-    transform: translate(0rem,0rem);
-    -webkit-transform: translate(0rem,0rem);
-    -moz-transform: translate(0rem,0rem);
-    -ms-transform: translate(0rem,0rem);
-    -o-transform: translate(0rem,0rem);
-}
+    transform: translate(0rem, 0rem);
+    -webkit-transform: translate(0rem, 0rem);
+    -moz-transform: translate(0rem, 0rem);
+    -ms-transform: translate(0rem, 0rem);
+    -o-transform: translate(0rem, 0rem);
+  }
 }
 #bird1 {
   animation: birds 8s linear infinite;
@@ -623,7 +625,7 @@ body {
   transform-origin: right;
   transform-box: fill-box;
 }
-#g-flower2{
+#g-flower2 {
   animation: flower1 4s ease alternate infinite;
   -webkit-animation: flower1 4s ease alternate infinite;
   -moz-animation: flower1 4s ease alternate infinite;
@@ -632,7 +634,7 @@ body {
   transform-origin: bottom;
   transform-box: fill-box;
 }
-#g-flower1{
+#g-flower1 {
   animation: flower2 5s ease alternate infinite;
   -webkit-animation: flower2 5s ease alternate infinite;
   -moz-animation: flower2 5s ease alternate infinite;
@@ -641,7 +643,7 @@ body {
   transform-origin: bottom;
   transform-box: fill-box;
 }
-#tree{
+#tree {
   animation: tree 4s ease alternate infinite;
   -webkit-animation: tree 4s ease alternate infinite;
   -moz-animation: tree 5s ease alternate infinite;
@@ -657,14 +659,14 @@ body {
     -moz-transform: rotateZ(-1deg);
     -ms-transform: rotateZ(-1deg);
     -o-transform: rotateZ(-1deg);
-}
+  }
   to {
     transform: rotateZ(2deg);
     -webkit-transform: rotateZ(2deg);
     -moz-transform: rotateZ(2deg);
     -ms-transform: rotateZ(2deg);
     -o-transform: rotateZ(2deg);
-}
+  }
 }
 #sun {
   animation: sun ease-in-out 4s alternate infinite;
@@ -674,13 +676,113 @@ body {
   -o-animation: sun ease-in-out 5s alternate infinite;
 }
 @keyframes sun {
-  from {fill: rgb(255, 224, 52);}
-  to {fill: rgb(255, 239, 149);}
+  from {
+    fill: rgb(255, 224, 52);
+  }
+  to {
+    fill: rgb(255, 239, 149);
+  }
 }
 /* ~/about svg */
 
 /* ~@ About Us section */
 
 /* ? Features Section */
+.features {
+  height: 100vh;
+  margin: 10rem 0rem 1rem 0rem;
+  padding: 4rem 0rem 0rem 1rem;
+}
+.features .row {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.features .row h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.7rem;
+  text-shadow: none !important;
+}
+.features .row p {
+  font-size: 1.8rem;
+}
+.features .row img {
+  width: 10rem;
+  align-self: center;
+}
+.features .row span {
+  justify-self: flex-start !important;
+}
+
+.features .row .col-left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  text-align: center;
+}
+.features .row .col-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 30%;
+  text-align: center;
+}
+.features .row .col-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.feature-Btn {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
 /* ~? Features Section */
+/* *Option Section */
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.option .row {
+  width: 90%;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.option .row .col-left{
+  flex-basis: 50%;
+}
+.option .row .col-left img{
+  width: 100%;
+}
+.option .row .col-right{
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.option .row .col-right p{
+  max-width: 100%;
+}
+.option .row .col-right .shapes-text-end{
+  align-self: flex-end;
+}
+.option .row .col-right .common-button {
+  margin: 3rem 0;
+}
+/* ~*Option Section */
+
+/* !Offer Section */
+
+/* ~!Offer Section */
