@@ -540,19 +540,19 @@ body {
 /* ~*side nave style */
 
 /* @ About Us section */
-.about {
+.about , .offer{
   display: flex;
   padding: 2rem 0;
   align-items: center;
   flex-wrap: wrap;
 }
-.about .right-col {
+.about .right-col,.offer .right-col {
   flex-basis: 50%;
 }
-.about .right-col svg {
+.about .right-col svg, .offer .right-col svg {
   width: 100%;
 }
-.about .left-col {
+.about .left-col, .offer .left-col {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
@@ -784,5 +784,53 @@ body {
 /* ~*Option Section */
 
 /* !Offer Section */
-
+#offer {
+  width: 95% !important;
+}
+#middleOption {
+  animation: option 3s ease alternate infinite;
+  -webkit-animation: option 3s ease alternate infinite;
+  -moz-animation: option 1s ease alternate infinite;
+  -ms-animation: option 1s ease alternate infinite;
+  -o-animation: option 1s ease alternate infinite;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+@keyframes option {
+  0% {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+}
+  25% {
+    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+    -moz-transform: rotateZ(10deg);
+    -ms-transform: rotateZ(10deg);
+    -o-transform: rotateZ(10deg);
+}
+  50% {
+    transform: translateY(-5rem);
+    -webkit-transform: translateY(-5rem);
+    -moz-transform: translateY(-5rem);
+    -ms-transform: translateY(-5rem);
+    -o-transform: translateY(-5rem);
+}
+  75% {
+    transform: rotateZ(-10deg);
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    -o-transform: rotateZ(-10deg);
+}
+  100% {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+}
+}
 /* ~!Offer Section */
