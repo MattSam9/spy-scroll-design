@@ -26,6 +26,7 @@
   <meta name="robots" content="max-image-preview:large">
   <title>Spy-Scroll Design</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script async src="dev.js"></script>
 </head>
 
 <body>
@@ -37,20 +38,6 @@
     </a>
   </div>
   <section class="header-section container-fluid">
-    <div class="header-text">
-      <h2 class="my-h2 d-fa">طراحی وبسایت با سبک بلاگ</h2>
-      <span class="square-shape d-fa"></span>
-      <p class="my-p d-fa">امروزه یکی از نیازهای اساسی هر واحد کاری، داشتن یک وب سایت حرفه ای می باشد زیرا به جرات می توان
-        اظهار داشت که بهترین و
-        سریع ترین راه برای معرفی محصولات و شرکت ها و فعالیت های اقتصادی در قرن بیست و یکم بستر ارتباطات مبتنی بر داده
-        است.</p>
-      <button class="common-button d-fa">بیشتر بخوانید</button>
-      <div class="shapes-text-end d-fa">
-        <span class="line-1"></span><br>
-        <span class="line-2"></span><br>
-        <span class="line-3"></span>
-      </div>
-    </div>
     <div class="header-svg">
       <svg width="803" height="762" viewBox="0 0 803 762" fill="none" xmlns="http://www.dev-matt.com"
         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -263,7 +250,8 @@
           <path id="r-h"
             d="M726.36 344.385C716.235 331.789 703.985 322.068 690.469 315.908C681.793 311.964 672.35 309.527 663.28 311.767C654.21 314.007 645.632 321.706 643.101 332.626C641.032 341.555 643.17 351.169 646.38 359.574C649.591 367.98 653.878 375.774 656.475 384.493C659.124 393.39 659.922 402.957 658.793 412.327C657.665 421.698 654.648 430.574 650.014 438.15C645.381 445.726 639.279 451.763 632.262 455.711C625.246 459.66 617.537 461.396 609.835 460.761C618.746 462.228 626.961 467.366 635.672 470.102C644.383 472.837 654.665 472.652 661.138 464.994C667.987 456.892 668.125 443.72 667.793 432.053L666.316 380.026C666.065 371.182 665.851 362.054 668.45 353.799C671.05 345.544 677.227 338.316 684.439 338.391C689.906 338.448 694.743 342.511 699.127 346.518C703.51 350.525 708.149 354.8 713.594 355.396C719.038 355.992 725.255 351.048 724.847 344.359"
             fill="#BA6E28" />
-          <path id="r-5" d="M579.16 450.737L653.067 452.878L663.774 549.822L595.521 551.701L579.16 450.737Z" fill="#EEE7E7" />
+          <path id="r-5" d="M579.16 450.737L653.067 452.878L663.774 549.822L595.521 551.701L579.16 450.737Z"
+            fill="#EEE7E7" />
           <path id="r-1"
             d="M657.749 476.712C658.182 477.441 658.569 478.212 658.905 479.018L723.36 487.569L732.639 471.55L753.666 486.023L735.443 524.895L656.395 499.515C654.401 501.964 651.862 503.59 649.115 504.177C646.37 504.764 643.547 504.284 641.022 502.802C638.498 501.319 636.392 498.904 634.984 495.878C633.576 492.852 632.934 489.357 633.142 485.86C633.349 482.362 634.398 479.027 636.147 476.298C637.897 473.569 640.264 471.575 642.936 470.582C645.607 469.589 648.456 469.644 651.101 470.739C653.747 471.834 656.066 473.917 657.749 476.712Z"
             fill="#FED4D4" />
@@ -293,13 +281,27 @@
         </defs>
       </svg>
     </div>
+    <div class="header-text">
+      <h2 class="my-h2 d-fa">طراحی وبسایت با سبک بلاگ</h2>
+      <span class="square-shape d-fa"></span>
+      <p class="my-p d-fa">امروزه یکی از نیازهای اساسی هر واحد کاری، داشتن یک وب سایت حرفه ای می باشد زیرا به جرات می توان
+        اظهار داشت که بهترین و
+        سریع ترین راه برای معرفی محصولات و شرکت ها و فعالیت های اقتصادی در قرن بیست و یکم بستر ارتباطات مبتنی بر داده
+        است.</p>
+      <button class="common-button d-fa">بیشتر بخوانید</button>
+      <div class="shapes-text-end d-fa">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
+      </div>
+    </div>
   </section>
   <nav id="sideNave" class="d-fa">
     <ul>
       <li><a href="#logo">خانه</a></li>
       <li><a href="#about">درباره ما</a></li>
-      <li><a href="#">مزیت ها</a></li>
-      <li><a href="#">گزینه ها</a></li>
+      <li><a href="#features">مزیت ها</a></li>
+      <li><a href="#option">گزینه ها</a></li>
       <li><a href="#">پیشنهاد ها</a></li>
       <li><a href="#">تماس با ما</a></li>
     </ul>
@@ -307,9 +309,22 @@
   <img src="img/menu.png" alt="menubtn" id="menuBtn">
   <!-- ~@ home section -->
 
-  <!-- !about section -->
+  <!-- ^about section -->
   <section id="about" class="about container-fluid">
     <div class="left-col">
+      <h2 class="my-h2 d-fa">درباره ی Dev-Matt</h2>
+      
+      <span class="square-shape d-fa"></span>
+      <p class="my-p d-fa">امروزه یکی از نیازهای اساسی هر واحد کاری، داشتن یک وب سایت حرفه ای می باشد زیرا به جرات می توان اظهار داشت که بهترین و
+        سریع ترین راه برای معرفی محصولات و شرکت ها و فعالیت های اقتصادی در قرن بیست و یکم بستر ارتباطات مبتنی بر داده است.</p><br><br>
+        <div class="shapes-text-end d-fa">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div><br><br>
+      <h3 class="my-h3 d-fa">امروزه یکی از نیازهای اساسی هر واحد کاری، داشتن یک وب سایت حرفه ای می باشد زیرا به جرات می توان اظهار داشت.</h3>
+    </div>
+    <div class="right-col">
       <svg width="707" height="713" viewBox="0 0 707 713" fill="none" xmlns="http://www.dev-matt.com">
         <g id="undraw_Walking_outside_re_56xo 1">
           <path id="Vector" d="M244.976 694.394L251.922 697.145L263.252 663.024L253.001 658.964L244.976 694.394Z"
@@ -442,48 +457,83 @@
         </g>
       </svg>
     </div>
-    <div class="right-col">
-      <h2 class="my-h2 d-fa">درباره ی Dev-Matt</h2>
-      <span class="square-shape"></span>
-      <p class="my-p d-fa">امروزه یکی از نیازهای اساسی هر واحد کاری، داشتن یک وب سایت حرفه ای می باشد زیرا به جرات می توان اظهار داشت که بهترین و
-        سریع ترین راه برای معرفی محصولات و شرکت ها و فعالیت های اقتصادی در قرن بیست و یکم بستر ارتباطات مبتنی بر داده است.</p><br><br>
-        <div class="shapes-text-end d-fa">
-          <span class="line-1"></span><br>
-          <span class="line-2"></span><br>
-          <span class="line-3"></span>
-        </div><br><br>
-      <h3 class="my-h3 d-fa">امروزه یکی از نیازهای اساسی هر واحد کاری، داشتن یک وب سایت حرفه ای می باشد زیرا به جرات می توان اظهار داشت.</h3>
-  
-    </div>
   </section>
-  <!-- ~!about section -->
+  <!-- ~^about section -->
 
   <!-- * Features Section  -->
     <section id="features" class="features container-fluid">
       <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <div class="col-left">
+          <img src="img/pic-1.png" alt="lamp">
+          <h3 class="my-h3 d-fa">طراحی روز دنیا</h3>
+          <span class="square-shape d-fa"></span>
+          <p class="my-p d-fa">برای داشتن دکوراسیون پذیرایی جدید و مدرن بهتر است با ایده ها و طرح های روز دنیا آشنا باشیم، علم طراحی دکوراسیون داخلی
+          منازل مانند هر علم دیگری در حال پیشرفت است و هر روز شاهد برداشتن گام های جدید و خلق ایده های نو در زمینه</p><br>
+          <div class="shapes-text-end d-fa">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+        </div>
+        <div class="col-middle">
+          <img src="img/pic-2.png" alt="brain">
+          <h3 class="my-h3 d-fa">طراحی روز دنیا</h3>
+          <span class="square-shape"></span>
+          <p class="my-p d-fa">برای داشتن دکوراسیون پذیرایی جدید و مدرن بهتر است با ایده ها و طرح های روز دنیا آشنا باشیم، علم طراحی دکوراسیون داخلی
+          منازل مانند هر علم دیگری در حال پیشرفت است و هر روز شاهد برداشتن گام های جدید و خلق ایده های نو در زمینه</p><br>
+          <div class="shapes-text-end d-fa">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+        </div>
+        <div class="col-right">
+          <img src="img/pic-3.png" alt="rocket">
+          <h3 class="my-h3 d-fa">طراحی روز دنیا</h3>
+          <span class="square-shape"></span>
+          <p class="my-p d-fa">برای داشتن دکوراسیون پذیرایی جدید و مدرن بهتر است با ایده ها و طرح های روز دنیا آشنا باشیم، علم
+            طراحی دکوراسیون داخلی
+            منازل مانند هر علم دیگری در حال پیشرفت است و هر روز شاهد برداشتن گام های جدید و خلق ایده های نو در زمینه</p><br>
+            <div class="shapes-text-end d-fa">
+              <span class="line-1"></span><br>
+              <span class="line-2"></span><br>
+              <span class="line-3"></span>
+            </div>
+        </div>
+      </div>
+      <div class="feature-Btn">
+        <button class="common-button d-fa">سفارش دهید</button>
       </div>
     </section>
   <!-- ~* Features Section  -->
 
+  <!-- ?Option Section -->
+      <section class="option container-fluid" id="option">
+        <div class="row">
+          <div class="col-left">
+            <img src="img/course.png" alt="options">
+          </div>
+          <div class="col-right">
+            <h3 class="my-h2 d-fa">بازار هدف خود را گسترش دهید</h3>
+            <span class="square-shape"></span>
+            <p class="my-p d-fa">لیگ قهرمانان؟ معنای زیادی برای ما دارد. دانستن این که می توانیم به دور بعد صعود کنیم، باعث افتخار تک تک ما می شود چون در
+            چند سال اخیر موفق به انجام این کار نشده بودیم. این برای ما انگیزه کافی ای است. باید برای همه چیز آماده باشیم و خواهیم
+            بود.</p><br><br>
+            <div class="shapes-text-end d-fa">
+              <span class="line-1"></span><br>
+              <span class="line-2"></span><br>
+              <span class="line-3"></span>
+            </div>
+            <button class="common-button d-fa">بازار هدف</button>
+          </div>
+        </div>
+      </section>
+  <!-- ~?Option Section -->
+  
+  <!-- !Offer Section -->
 
+  <!-- ~!Offer Section -->
 
-  <script>
-    /* <!--@sidenav click*/
-    var sideNav = document.getElementById('sideNave');
-    var sideNavBtn = document.getElementById('menuBtn');
-    sideNav.style.right = "-25rem";
-    sideNavBtn.onclick = function(){
-      if(sideNav.style.right == "-25rem"){
-        sideNav.style.right = "0rem";
-      }else{
-        sideNav.style.right = "-25rem";
-      }
-    }
-    /* <!--~@sidenav click*/
-  </script>
 </body>
 
 </html>
