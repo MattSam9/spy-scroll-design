@@ -539,8 +539,9 @@ body {
 
 /* ~*side nave style */
 
-/* @ About Us section */
-.about , .offer{
+/* @ About Us  and offer section */
+
+.about .row, .offer .row{
   display: flex;
   padding: 2rem 0;
   align-items: center;
@@ -687,13 +688,13 @@ body {
 
 /* ~@ About Us section */
 
-/* ? Features Section */
+/* ? Features Section*/
 .features {
   height: 100vh;
   margin: 10rem 0rem 1rem 0rem;
   padding: 4rem 0rem 0rem 1rem;
 }
-.features .row {
+.features .row{
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -731,7 +732,7 @@ body {
   flex-direction: column;
   justify-content: center;
   flex-basis: 30%;
-  text-align: center;
+  text-align: center; 
 }
 .features .row .col-right {
   display: flex;
@@ -762,8 +763,19 @@ body {
 }
 .option .row .col-left{
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.option .row .col-left img{
+.option .row .col-left .dollar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 13rem;
+  width: 100%;
+  height: 60px;
+}
+.option .row .col-left svg{
   width: 100%;
 }
 .option .row .col-right{
@@ -781,6 +793,102 @@ body {
 .option .row .col-right .common-button {
   margin: 3rem 0;
 }
+/* !Dollar animation */
+  .dollar-cube {
+  position: relative;
+  width: 66px;
+  height: 30px;
+  transform-style: preserve-3d;
+  animation: turn 5s linear infinite;
+  -webkit-animation: turn 5s linear infinite;
+}
+
+.dollar-face {
+  width: 66px;
+  height: 30px;
+  background: url(img/dollar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+.side-face {
+  width: 16px;
+  height: 30px;
+  background: url(img/dLine.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+.dollar-bottom {
+  width: 66px;
+  height: 16px;
+  background: url(img/dLine2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+}
+.dollar-front {
+  transform: translateZ(8px);
+  -webkit-transform: translateZ(8px);
+  -moz-transform: translateZ(8px);
+  -ms-transform: translateZ(8px);
+  -o-transform: translateZ(8px);
+}
+.dollar-back {
+  transform: translateZ(-8px) rotateY(180deg);
+  -webkit-transform: translateZ(-8px) rotateY(180deg);
+  -moz-transform: translateZ(-8px) rotateY(180deg);
+  -ms-transform: translateZ(-8px) rotateY(180deg);
+  -o-transform: translateZ(-8px) rotateY(180deg);
+}
+
+.dollar-left {
+  transform: translateX(58px) rotateY(90deg);
+  -webkit-transform: translateX(58px) rotateY(90deg);
+  -moz-transform: translateX(58px) rotateY(90deg);
+  -ms-transform: translateX(58px) rotateY(90deg);
+  -o-transform: translateX(58px) rotateY(90deg);
+}
+.dollar-right {
+  transform: translateX(-8px) rotateY(-90deg);
+  -webkit-transform: translateX(-8px) rotateY(-90deg);
+  -moz-transform: translateX(-8px) rotateY(-90deg);
+  -ms-transform: translateX(-8px) rotateY(-90deg);
+  -o-transform: translateX(-8px) rotateY(-90deg);
+}
+
+.dollar-bottom {
+  transform: translateY(22px) rotateX(-90deg);
+  -webkit-transform: translateY(22px) rotateX(-90deg);
+  -moz-transform: translateY(22px) rotateX(-90deg);
+  -ms-transform: translateY(22px) rotateX(-90deg);
+  -o-transform: translateY(22px) rotateX(-90deg);
+}
+
+@keyframes turn {
+  from { transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); -o-transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); -webkit-transform: rotateY(360deg); -moz-transform: rotateY(360deg); -ms-transform: rotateY(360deg); -o-transform: rotateY(360deg); }
+}
+/* ~!Dollar animation */
+
 /* ~*Option Section */
 
 /* !Offer Section */
@@ -788,15 +896,15 @@ body {
   width: 95% !important;
 }
 #middleOption {
-  animation: option 3s ease alternate infinite;
-  -webkit-animation: option 3s ease alternate infinite;
-  -moz-animation: option 1s ease alternate infinite;
-  -ms-animation: option 1s ease alternate infinite;
-  -o-animation: option 1s ease alternate infinite;
-  transform-origin: bottom;
+  animation: option 10s ease-in-out infinite;
+  -webkit-animation: option 10s ease-in-out infinite;
+  -moz-animation: option 10s ease-in-out infinite;
+  -ms-animation: option 10s ease-in-out infinite;
+  -o-animation: option 10s ease-in-out infinite;
+  transform-origin: center;
   transform-box: fill-box;
 }
-@keyframes option {
+  @keyframes option {
   0% {
     transform: rotateZ(0deg);
     -webkit-transform: rotateZ(0deg);
@@ -804,26 +912,33 @@ body {
     -ms-transform: rotateZ(0deg);
     -o-transform: rotateZ(0deg);
 }
-  25% {
-    transform: rotateZ(10deg);
-    -webkit-transform: rotateZ(10deg);
-    -moz-transform: rotateZ(10deg);
-    -ms-transform: rotateZ(10deg);
-    -o-transform: rotateZ(10deg);
+  10% {
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
 }
-  50% {
-    transform: translateY(-5rem);
-    -webkit-transform: translateY(-5rem);
-    -moz-transform: translateY(-5rem);
-    -ms-transform: translateY(-5rem);
-    -o-transform: translateY(-5rem);
+  40% {
+    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
 }
-  75% {
-    transform: rotateZ(-10deg);
-    -webkit-transform: rotateZ(-10deg);
-    -moz-transform: rotateZ(-10deg);
-    -ms-transform: rotateZ(-10deg);
-    -o-transform: rotateZ(-10deg);
+  60% {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+}
+  90% {
+    transform: rotateZ(-45deg);
+    -webkit-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    -ms-transform: rotateZ(-45deg);
+    -o-transform: rotateZ(-45deg);
 }
   100% {
     transform: rotateZ(0deg);
@@ -834,3 +949,53 @@ body {
 }
 }
 /* ~!Offer Section */
+
+/* //contact us */
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+  .contact .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .row .left-col, .contact .row .right-col  {
+    flex-basis: 50%;
+  }
+  .contact .row .left-col svg{
+    width: 100%;
+  }
+  .contact .row .right-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .row .right-col form {
+    max-width: 50rem;
+    margin: 3rem 0;
+  }
+  .contact .row .right-col form input,.contact .row .right-col form textarea{
+    width: 100%;
+    max-width: 100%;
+    padding: 1.2rem 1rem;
+    margin-bottom: 0.5rem;
+    font-family: mypersianFont;
+    font-size: 2rem;
+    font-weight: bold;
+    outline: none;
+    box-shadow: none;
+    border: 0.2rem solid #f67c92;
+  }
+  .contact .row .right-col form .btn-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact .row .right-col form .btn-box button {
+    flex-basis: 48%;
+  }
+/* ~//contact us */
