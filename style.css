@@ -1146,3 +1146,32 @@ body {
     padding: 0rem 0rem 3rem;
   }
 /* ~!copyleft */
+
+/* ? Social Media */
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 1rem;
+  z-index: 2;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.social-icons ul {
+  list-style: none;
+}
+.social-icons ul li img{
+  width: 3rem;
+  margin: 1rem 0rem;
+  transition: width 0.5s ease;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+}
+.social-icons ul li img:hover{
+  width: 5rem;
+}
+/* ~? Social Media */
