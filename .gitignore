@@ -73,6 +73,10 @@ Thumbs.db
 /img
 /fonts
 
+# ignore content files
+*.doc
+*.docx
+
 #ignore library
 jquery*
 popper*
