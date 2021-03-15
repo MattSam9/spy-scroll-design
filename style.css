@@ -461,11 +461,11 @@ body {
     -o-transform: translateY(0rem);
   }
   50% {
-    transform: translateY(-4rem);
-    -webkit-transform: translateY(-4rem);
-    -moz-transform: translateY(-4rem);
-    -ms-transform: translateY(-4rem);
-    -o-transform: translateY(-4rem);
+    transform: translateY(-2rem);
+    -webkit-transform: translateY(-2rem);
+    -moz-transform: translateY(-2rem);
+    -ms-transform: translateY(-2rem);
+    -o-transform: translateY(-2rem);
   }
   100% {
     transform: translateY(0rem);
