@@ -108,7 +108,7 @@ html {
   background-color: #f67c92;
   color: #fff;
 }
-.my-a{
+.my-a {
   align-self: flex-start;
   display: flex;
   justify-content: center;
@@ -182,7 +182,6 @@ body {
   direction: ltr;
   font-family: myFirstEngFont, mypersianFont;
 }
-
 
 /* !logo design */
 .logo {
@@ -858,7 +857,7 @@ body {
 .dollar-face {
   width: 66px;
   height: 30px;
-  background: url(img/dollar.png);
+  background: url(img/Dollar.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1429,11 +1428,11 @@ body {
     display: none;
   }
 }
-@media only screen and (max-width: 1000px) and (min-width:771px){
+@media only screen and (max-width: 1000px) and (min-width: 771px) {
   .option .row .col-left .dollar {
     display: none;
   }
-  .footer-row{
+  .footer-row {
     justify-content: center;
   }
   .footer-left-col {
@@ -1441,12 +1440,12 @@ body {
     order: 2;
   }
 }
-@media only screen and (max-width: 1200px) and (min-width:1001px){
+@media only screen and (max-width: 1200px) and (min-width: 1001px) {
   .option .row .col-left .dollar {
-  align-items: flex-end;
-  padding-right: calc(2rem + 4vw);
+    align-items: flex-end;
+    padding-right: calc(2rem + 4vw);
   }
-  .footer-row{
+  .footer-row {
     justify-content: center;
   }
   .footer-left-col {
@@ -1454,12 +1453,12 @@ body {
     order: 2;
   }
 }
-@media only screen and (max-width: 1400px) and (min-width:1201px){
+@media only screen and (max-width: 1400px) and (min-width: 1201px) {
   .option .row .col-left .dollar {
-  align-items: center;
-  padding-right: calc(2rem + 4.5vw);
+    align-items: center;
+    padding-right: calc(2rem + 4.5vw);
   }
-  .footer-row{
+  .footer-row {
     justify-content: center;
   }
   .footer-left-col {
